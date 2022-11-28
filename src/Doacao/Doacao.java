@@ -28,28 +28,6 @@ public class Doacao {
         this.aprovada = aprovada;
     }
 
-    /*
-    class Interesse {
-
-        Usuario u;
-        String j;
-
-        public Interesse(Usuario u, String j) {
-            this.u = u;
-            this.j = j;
-        }
-    }
-    private ArrayList<Interesse> interessados = new ArrayList<>();
-
-    public ArrayList<Interesse> getInteressados() {
-        return this.interessados;
-    }
-
-    public void setInteressados(ArrayList<Interesse> interessados) {
-        this.interessados = interessados;
-    }
-     */
-
     public ArrayList<Item> getLista() {
         return itens;
     }
@@ -143,20 +121,4 @@ public class Doacao {
         }
         return false;
     }
-
-    /*
-    public boolean cadastrarInteressado(Usuario u, String j) {
-        Interesse i = new Interesse(u, j);
-        interessados.add(i);
-        return true;
-    }
-
-    public void printInteressados() {
-        System.out.println("Dono da doação: " + this.usuario.getLogin());
-        System.out.println("Interessados:");
-        for (Interesse i : this.interessados) {
-            System.out.println(i.u.getLogin() + ',' + i.j);
-        }
-    }
-     */
 }
